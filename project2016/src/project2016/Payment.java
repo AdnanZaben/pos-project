@@ -11,10 +11,6 @@ protected char payment;
 	setDiscount(discount);
 	setPayment(payment);
 	}
-	
-	
-
-
 
 	public boolean isDiscount() {
 		

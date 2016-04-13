@@ -46,8 +46,7 @@ public class Test {
 				System.out.println("Sorry, tickets are sold out for this movie");
 			}
 			else{
-				System.out.println("You chose " + o.choseFilm(d).getName()+"\n");
-				Ticket t = new Ticket()
+				System.out.println("You chose " + o.choseFilm(a).getName()+"\n");
 				System.out.println("------------------");
 				System.out.println("Available times: "+"\n");
 				int n=1;
@@ -75,7 +74,25 @@ public class Test {
 				System.out.println("Sorry, tickets are sold out for this movie");
 			}
 			else{
-				System.out.println("You chose " + o.choseFilm(d).getName());
+				System.out.println("You chose " + o.choseFilm(b).getName()+"\n");
+				System.out.println("------------------");
+				System.out.println("Available times: "+"\n");
+				int n=1;
+				for(String i: ch.getTimes()){
+					System.out.println(n+"...."+i);
+					n++;
+				}
+				System.out.println();
+				System.out.println("Select a time");
+				System.out.println();
+				String r = sc.next();
+				if (r.charAt(0) >= '1' && r.charAt(0) <= '4') {
+					end = Integer.parseInt(r);
+				}
+				switch(end){
+				case 1: 
+					
+				}
 			}
 		case 3:
 			ch = o.choseFilm(c);
@@ -83,8 +100,25 @@ public class Test {
 				System.out.println("Sorry, tickets are sold out for this movie");
 			}
 			else{
-				System.out.println("You chose " + o.choseFilm(d).getName());
-			}
+				System.out.println("You chose " + o.choseFilm(c).getName()+"\n");
+				System.out.println("------------------");
+				System.out.println("Available times: "+"\n");
+				int n=1;
+				for(String i: ch.getTimes()){
+					System.out.println(n+"...."+i);
+					n++;
+				}
+				System.out.println();
+				System.out.println("Select a time");
+				System.out.println();
+				String r = sc.next();
+				if (r.charAt(0) >= '1' && r.charAt(0) <= '4') {
+					end = Integer.parseInt(r);
+				}
+				switch(end){
+				case 1: 
+					}
+				}
 			break;
 		case 4:
 			ch = o.choseFilm(d);
@@ -92,7 +126,25 @@ public class Test {
 				System.out.println("Sorry, tickets are sold out for this movie");
 			}
 			else{
-				System.out.println("You chose " + o.choseFilm(d).getName());
+				System.out.println("You chose " + o.choseFilm(d).getName()+"\n");
+				System.out.println("------------------");
+				System.out.println("Available times: "+"\n");
+				int n=1;
+				for(String i: ch.getTimes()){
+					System.out.println(n+"...."+i);
+					n++;
+				}
+				System.out.println();
+				System.out.println("Select a time");
+				System.out.println();
+				String r = sc.next();
+				if (r.charAt(0) >= '1' && r.charAt(0) <= '4') {
+					end = Integer.parseInt(r);
+				}
+				switch(end){
+				case 1: 
+					
+				}
 			}
 			break;
 		}
